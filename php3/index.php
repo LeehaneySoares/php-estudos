@@ -11,6 +11,13 @@
 
   //Operador ternário
 
-  echo $idade >= 18 ? "maior de idade" : "menor de idade";
+  $maiorDeIdade = $idade >= 18 ? true : false;
 
+  if ($maiorDeIdade) {
+    echo "Maior de idade";
+  } else {
+    echo "Menor de idade";
+  }
+
+  
 ?>
