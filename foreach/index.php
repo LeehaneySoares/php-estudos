@@ -10,7 +10,7 @@
   ];
 
   foreach ($ingredientes as $indices) {
-    echo "$indices - ";
+    echo $indices . PHP_EOL;
   }
 
 ?>
