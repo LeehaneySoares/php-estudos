@@ -22,6 +22,14 @@
 
   caixaAlta("Olá Leehaney,", " Tudo bem ?", $text);
 
-  echo $text;
+  #echo $text;
+
+  //===================================================================================================
+
+  $lista = [6, 3, 8, 1, 2, "Leehaney"];
+
+  sort($lista);
+
+  var_dump($lista);
 
 ?>
