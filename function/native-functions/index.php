@@ -13,5 +13,12 @@
   echo round($otherNumber, 1)."<hr/>";
   echo ceil($otherNumber)."</br>"; // Arredonda para cima.
 
-  echo rand(50, 100);
+  echo rand(50, 100)."</br>"; // Gerar números aleatórios
+
+  $lista = [50, 40, 60, 80, 30];
+
+  print_r($lista).PHP_EOL;
+  echo "</br>";
+  echo "MAX: ".max($lista)."</br>";
+  echo "MIN: ".min($lista)."</br>";
 ?>
