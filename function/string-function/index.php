@@ -1,4 +1,5 @@
 <?php
+
   $nomeSujo = '       Leehaney        ';
   $nomeLimpo = trim($nomeSujo);
   echo "Nome sujo: $nomeSujo ".strlen($nomeSujo)."</br>";
@@ -13,4 +14,7 @@
 
   echo str_replace('R$', '', $dinheiro)."</br>";
 
+  $nome = 'Leehaney';
+
+  echo "...".substr($nome, -5, 5);
 ?>
