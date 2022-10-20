@@ -18,8 +18,20 @@
 
   echo "...".substr($nome, -5, 5).'</br>';
 
-  $nomeCompleto = 'Leehaney Soares';
+  $nomeCompleto = 'leehaney | soares | ferreira';
 
-  echo "Os caracteres (Soa) de { $nomeCompleto } começa na posição: ".strpos($nomeCompleto, 'Soa');
-  
+  echo "Os caracteres (Soa) de { $nomeCompleto } começa na posição: ".strpos($nomeCompleto, 'Soa').'</br>';
+
+  echo ucfirst($nomeCompleto).'</br>';
+  echo ucwords($nomeCompleto).'</br>';
+
+  $nomeTeste = 'Leehaney Soares Ferreira ';
+  $nameArray = explode(' ', $nomeTeste);
+
+  [$firstName, $secondName, $lastName] = $nameArray;
+
+  echo "
+    Primeiro nome: $firstName,".'</br>'.
+    "Segundo nome: $secondName,".'</br>'.
+    "Terceiro nome: $lastName".'</br>';
 ?>
