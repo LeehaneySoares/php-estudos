@@ -9,6 +9,12 @@
   $reprovados = array_diff($candidatos, $aprovados);
 
   echo "<h2>Candidatos que não foram aprovados: </h2>".'</br>';
-  print_r($reprovados)
+  print_r($reprovados);
+
+  $numeros = [10, 24, 56, 34, 22, 60, 87, 76];
+
+  $filtrados = array_filter($numeros, fn($item) => $item < 60 ? true : false);
   
+  echo "<h2>Os números sortiados foram: </h2>".'</br>';
+  print_r($filtrados);
 ?>
