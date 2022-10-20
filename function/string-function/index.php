@@ -34,4 +34,10 @@
     Primeiro nome: $firstName,".'</br>'.
     "Segundo nome: $secondName,".'</br>'.
     "Terceiro nome: $lastName".'</br>';
+
+    echo addslashes('\Leehaney\Soares').'<br/>';
+
+    $newName = chunk_split($nomeTeste, strlen($nomeTeste), '|');
+
+    print_r($newName);
 ?>
