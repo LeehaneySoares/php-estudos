@@ -7,14 +7,19 @@
 
   $nomeCaixaAlta = 'LEEHANEY';
 
-  echo strtolower($nomeCaixaAlta)."</br>";
-  echo strtoupper($nomeCaixaAlta)."</br>";
+  echo strtolower($nomeCaixaAlta).'</br>';
+  echo strtoupper($nomeCaixaAlta).'</br>';
 
   $dinheiro = 'R$ 15,00';
 
-  echo str_replace('R$', '', $dinheiro)."</br>";
+  echo str_replace('R$', '', $dinheiro).'</br>';
 
   $nome = 'Leehaney';
 
-  echo "...".substr($nome, -5, 5);
+  echo "...".substr($nome, -5, 5).'</br>';
+
+  $nomeCompleto = 'Leehaney Soares';
+
+  echo "Os caracteres (Soa) de { $nomeCompleto } começa na posição: ".strpos($nomeCompleto, 'Soa');
+  
 ?>
