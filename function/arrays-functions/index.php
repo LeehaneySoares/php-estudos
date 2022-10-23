@@ -13,8 +13,12 @@
 
   $numeros = [10, 24, 56, 34, 22, 60, 87, 76];
 
-  $filtrados = array_filter($numeros, fn($item) => ($item < 38) && true);
+  $filtrados = array_filter($numeros, fn($item) => ($item < 38));
   
   echo "<h2>Os números sortiados foram: </h2>".'</br>';
   print_r($filtrados);
+
+  $teste = array_pop($numeros);
+
+  print_r($teste);
 ?>
