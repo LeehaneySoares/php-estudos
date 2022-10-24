@@ -56,5 +56,5 @@
   $searchName = 'Cleber';
   $posicao = array_search($searchName, $nomes);
 
-  echo is_int($posicao) ? "O nome $searchName, está na posição: $posicao" : 'Nome não encontrado';
+  echo is_int($posicao) ? "O nome $searchName, está na posição: $posicao <br/>" : 'Nome não encontrado <br/>';
 ?>
