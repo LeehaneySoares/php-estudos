@@ -57,4 +57,18 @@
   $posicao = array_search($searchName, $nomes);
 
   echo is_int($posicao) ? "O nome $searchName, está na posição: $posicao <br/>" : 'Nome não encontrado <br/>';
+
+  $newNumeros = [91, 34, 22, 61, 73, 80, 10, 9];
+
+  arsort($newNumeros);
+
+  print_r($newNumeros);
+
+  echo '</br>';
+
+  $nomeArray = explode(' ', 'Leehaney Soares Ferreira');
+
+  asort($nomeArray);
+
+  print_r($nomeArray);
 ?>
