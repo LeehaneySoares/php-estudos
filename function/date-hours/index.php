@@ -1,8 +1,12 @@
 <?php
-  $timestamp =  mktime(0, 0, 0, date("m"), date("d"), date("Y") + 1);
-  echo date('d/m/Y', $timestamp);
+  $time = '2022-09-26';
 
-  #echo date('d-m-Y H.i.s');
+  $timestamp = strtotime($time);
 
+  echo $timestamp.'<br/>';
+
+  $data = '1995-09-22 14:32';
+
+  echo date('Y-m-d H:i', strtotime($data))
 
 ?>
