@@ -1,9 +1,1 @@
-<?php
-  function quadrado ($numero) {
-    return $numero ** 2;
-  }
-
-  function message($str) {
-    return $str;
-  }
-?>
+<h1>Cabeçalho 2.0</h1>
