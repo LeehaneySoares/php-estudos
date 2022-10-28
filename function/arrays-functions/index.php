@@ -17,4 +17,8 @@
   
   echo "<h2>Os números sortiados foram: </h2>".'</br>';
   print_r($filtrados);
+
+  $double = array_map(fn($item) => $item * 2, $numeros);
+  echo "<h2>o dobro dos números são: </h2>".'</br>';
+  print_r($double);
 ?>
