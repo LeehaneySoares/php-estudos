@@ -28,4 +28,10 @@
   $double = array_map(fn($item) => $item * 2, $numeros);
   echo "<h2>o dobro dos números são: </h2>".'</br>';
   print_r($double);
+
+  //Aprendendo um pouco mais sobre o var_dump
+
+  $a = array(3, 5, array('aaaa', 'bbbb', 'ccc'));
+  echo '</br>';
+  echo phpinfo(INFO_ALL);
 ?>
