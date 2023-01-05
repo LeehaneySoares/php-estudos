@@ -6,5 +6,4 @@
   echo "Nome: $nome </br>".PHP_EOL;
   echo "Email: $email </br>".PHP_EOL;
   echo "Senha: $senha".PHP_EOL;
-
 ?>
