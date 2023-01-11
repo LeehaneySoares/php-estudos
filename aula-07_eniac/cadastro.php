@@ -1,23 +1,31 @@
 <?php
 
-  $nome = strip_tags($_GET['nome']);
-  $dataNasc = strip_tags($_GET['dataNasc']);
-  $endereco = strip_tags($_GET['endereco']);
-  $sexo = strip_tags($_GET['sexo']);
-
-  echo "Nome: $nome </br>";
-  echo "Endereco: $endereco </br>";
-  foreach ($_GET['sexo'] as $key => $value) {
-    echo "Sexo: $value </br>";
+  function formCompleted () {
+    foreach ($_POST as $key => $value) {
+      $default = isset($value) ? $value : null;
+      echo strip_tags($default)."</br>";
+    }
   }
-  echo "Data Nascimento: $dataNasc </br>";
 
-  // foreach ($_GET as $key => $value) {
-  //   echo "$key: $value </br>";
-  // }
 
-  // foreach ($_GET['locomocao'] as $key => $value) {
-  //   echo "$key: $value </br>";
-  // }
+  $nome = $_POST['nome'];
+  $senha = filter_var($_POST['senha'], FILTER_SANITIZE_NUMBER_INT);
+  $confirmSenha = $_POST['confirm'];
+  $dataNasc = $_POST['dataNasc'];
+
+  echo $senha;
+
+  $notHasInfo = ($nome && $senha && $confirmSenha && $dataNasc);
+  $differentPassword = ($senha !== $confirmSenha);
+
+  if (!$notHasInfo) {
+    header('location: index.php');
+    exit;
+  } elseif ($differentPassword) {
+    echo "Sua senha está incorreta, tente novamente =/";
+  } else {
+    formCompleted();
+  }
+
 
 ?>
