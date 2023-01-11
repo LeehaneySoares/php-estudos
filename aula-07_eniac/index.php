@@ -7,7 +7,7 @@
   <title>Cadastro-PHP</title>
 </head>
 <body>
-  <form name='cadastro' method='GET' action='cadastro.php'>
+  <form name='cadastro' method='POST' action='cadastro.php'>
     <table>
       <tr>
         <td>
