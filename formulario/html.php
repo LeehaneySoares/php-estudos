@@ -16,7 +16,7 @@
       </div>
       <div class='form-group'>
         <label for='email'>Email:</label>
-        <input type='email' name='email' placeholder='seu@email.com'/>
+        <input type='email' name='email' placeholder='seu@email.com' />
       </div>
       <div class='form-group'>
         <label for='senha'>Senha:</label>
