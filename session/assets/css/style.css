@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.login__form {
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 12px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.login__logo {
+  text-align: center;
+  width: 100%;
+}
+
+.login__logo img {
+  height: 48px;
+  width: 48px;
+}
+
+.login__hgroup {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  line-height: 38px;
+}
+
+.login__hgroup > h1 {
+  font-size: 30px;
+}
+
+.login__hgroup > h4 {
+  color: #475467;
+  font-size: 16px;
+  text-align: center;
+}
+
+.login__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login__form-group > label {
+  color: #344054;
+  font-size: 14px;
+}
+
+.login__form-group > input {
+  align-items: center;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+}
+
+.login__action {
+  align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login__button {
+  align-items: center;
+  border: 1px solid #7F56D9;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  height: 44px;
+  width: 100%;
+}
+
+.login__button.login {
+  background-color: #7F56D9;
+}
+
+.login__button.signup {
+  background-color: #FFF;
+}
+
+.login__button.signup > a {
+  color: #344054;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.login__help {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
