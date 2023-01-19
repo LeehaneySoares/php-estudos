@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS `ua8` DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_general_ci`;
+USE `ua8`;
+CREATE TABLE IF NOT EXISTS `primeira_tabela` (
+  `matricula` int(11) NOT NULL,
+  `nome` varchar(40) NOT NULL,
+  PRIMARY KEY (`matricula`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `primeira_tabela` (`matricula`, `nome`) VALUES (1234567, 'Professor1'), (89101112, 'Professor2');
