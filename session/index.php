@@ -20,11 +20,11 @@
       </header>
       <div class='login__form-group'>
         <label for='user'>Usuário</label>
-        <input type='text' name='user' placeholder='Seu nome de usuário' />
+        <input type='text' name='user' placeholder='Seu nome de usuário' required />
       </div>
       <div class='login__form-group'>
         <label for='password'>Senha</label>
-        <input type='password' name='password' placeholder='••••••••' />
+        <input type='password' name='password' placeholder='••••••••' required />
       </div>
       <div class='login__action'>
         <button class='login__button login' type='submit'>Entrar</button>
