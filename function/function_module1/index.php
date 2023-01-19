@@ -34,15 +34,15 @@
 
   // Trabalhando com passagem de parâmetros por valor e por referencia;
 
+  // parâmetros passados por referencia, caso tenha alguma alteração dentro da função,
+  // seu valor original será alterado também;
+
   function passagem (&$referencia, $valor) {
     echo "Esse argumento utiliza a passagem por referencia: $referencia </br>";
     $referencia = 'Testando a referencia';
     echo "Esse argumento é por valor: $valor </br>";
     $valor = 5255;
   }
-
-  // parâmetros passados por referencia, caso tenha alguma alteração dentro da função,
-  // seu valor original será alterado também;
 
   $nome = 'Leehaney';
   $valor = 50;
