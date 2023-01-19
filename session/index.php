@@ -8,7 +8,7 @@
   <title>Tela de login</title>
 </head>
 <body>
-  <?php session_start() ?>
+  <?php session_start(); if ($_SESSION['error']) echo $_SESSION['error']; $_SESSION['error'] = ''; ?>
   <main class='login'>
     <form class='login__form' name='login' method='POST' action='./auth/authentication.php'>
       <header class='login__logo'>
@@ -33,8 +33,8 @@
         </button>
       </div>
       <div class='login__help'>
-        <a class='login__link' href='./forgout.php'>Esqueci a senha</a>
-        <a class='login__link' href='./help.php'>Preciso de ajuda</a>
+        <a class='login__link' href='./helpers/forgout.php'>Esqueci a senha</a>
+        <a class='login__link' href='./helpers/help.php'>Preciso de ajuda</a>
       </div>
     </form>
   </main>
