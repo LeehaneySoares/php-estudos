@@ -37,7 +37,7 @@
   // parâmetros passados por referencia, caso tenha alguma alteração dentro da função,
   // seu valor original será alterado também;
 
-  function passagem (&$referencia, $valor) {
+  function passagem (&$referencia, $valor = 40) { // O uso dos parâmetros default sãi iguais em JS
     echo "Esse argumento utiliza a passagem por referencia: $referencia </br>";
     $referencia = 'Testando a referencia';
     echo "Esse argumento é por valor: $valor </br>";
@@ -45,9 +45,8 @@
   }
 
   $nome = 'Leehaney';
-  $valor = 50;
 
-  passagem($nome, $valor);
+  passagem($nome);
   echo "Esse é o parâmetro (referencia) modificado dentro da função: $nome </br>";
   echo "Esse é o parâmetro (valor) modificado dentro da função: $valor </br>";
 ?>
