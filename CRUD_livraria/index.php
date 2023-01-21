@@ -40,6 +40,9 @@
         </div>
         <div class='book__action'>
           <button class='book__button add' type='submit'>Adicionar</button>
+          <button class='book__button viewer add' type='button'>
+            <a href=./view/index.php>Visualizar registros</a>
+          </button>
           <button class='book__button clear' type='reset'>Limpar campos</button>
         </div>
       </form>
