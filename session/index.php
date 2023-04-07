@@ -8,7 +8,6 @@
   <title>Tela de login</title>
 </head>
 <body>
-  <?php session_start(); if ($_SESSION['error']) echo $_SESSION['error']; $_SESSION['error'] = ''; ?>
   <main class='login'>
     <form class='login__form' name='login' method='POST' action='./auth/authentication.php'>
       <header class='login__logo'>
@@ -17,6 +16,16 @@
           <h1>Login in to your account</h1>
           <h4>Welcome back! Please enter your details.</h4>
         </hgroup>
+        <?php
+          session_start();
+
+          if ($_SESSION['error']) {
+            $session = $_SESSION['error'];
+            echo "<span style='color: red;'>$session</span>";
+          }
+
+          $_SESSION['error'] = '';
+        ?>
       </header>
       <div class='login__form-group'>
         <label for='user'>Usuário</label>
