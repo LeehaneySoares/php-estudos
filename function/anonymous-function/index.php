@@ -30,8 +30,8 @@
     return mb_strtoupper($text);
   };
 
-  function outraFuncao (int $valor, mixed $returnFunction): mixed {
-    return "O primeiro parâmetro é: $valor. e o segundo é: $returnFunction";
+  function outraFuncao (int $valor, mixed $returnFunction): string {
+    return "O primeiro parâmetro é: $valor e o segundo é: $returnFunction";
   }
 
   // Podemos passar funções como parâmetros para outra função
