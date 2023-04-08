@@ -1,14 +1,8 @@
 <?php
   $value = $_POST['value'] ?? 0;
-  $result;
-
-  $multiple = function (int $multiplicador, int $multiplicando): string {
-    $result = $multiplicador * $multiplicando;
-
-    return "$multiplicador x $multiplicando = $result <br/>";
-  };
 
   for ($i = 0; $i <= 10; $i++) {
-    echo $multiple($value, $i);
+    $result = $value * $i;
+    echo "$value x $i = $result </br>";
   }
 ?>
