@@ -33,7 +33,7 @@
       </div>
       <div class='login__form-group'>
         <label for='password'>Senha</label>
-        <input type='password' name='password' placeholder='••••••••' required />
+        <input type='password' name='password' placeholder='Sua senha de 8 dígitos' required />
       </div>
       <div class='login__action'>
         <button class='login__button login' type='submit'>Entrar</button>
