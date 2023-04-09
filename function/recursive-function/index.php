@@ -14,16 +14,10 @@
 
   //================================================================================
 
-  function fatorial ($numero, $fator = 1) {
-    $fator *= $numero;
-    echo "$numero x ";
-    $numero--;
-    if ($numero > 1) {
-      fatorial($numero, $fator);
-    } else {
-      echo "$numero = $fator";
-    }
+  function fatorial ($numero = 7) {
+    if ($numero == 1) return $numero;
+    return $numero * fatorial($numero - 1);
   }
 
-  fatorial(8)
+  echo 'O fatorial de 10 é: '.fatorial();
 ?>
