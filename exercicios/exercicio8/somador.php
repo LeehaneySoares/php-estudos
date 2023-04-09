@@ -1,16 +1,16 @@
 <?php
-  $firstValue = $_GET['firstValue'] ?? 0;
-  $secondValue = $_GET['secondValue'] ?? 0;
+  $firstValue = filter_input(INPUT_GET, 'firstValue') ?? 0;
+  $secondValue = filter_input(INPUT_GET, 'secondValue') ?? 0;
 
-  function somador (int $x, int $y): string {
+  function calculate (int $x = 0, int $y = 0): int {
     $evaluate = $x + $y;
 
     if ($evaluate <= 20) {
-      return ($evaluate - 5).'</br>';
+      return $evaluate - 5;
     }
 
-    return ($evaluate + 8).'</br>';
+    return $evaluate + 8;
   }
 
-  echo somador($firstValue, $secondValue);
+  echo calculate($firstValue, $secondValue);
 ?>
