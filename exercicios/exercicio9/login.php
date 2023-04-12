@@ -10,7 +10,7 @@
 <form method='POST' action='./recebe.php'>
   <div class='form-group'>
     <label>Qual é o seu nome?</label>
-    <input type='text' name='nome' />
+    <input type='text' name='nome' required/>
   </div>
   <button type='submit'>Enviar</button>
 </form>
